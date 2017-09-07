@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A new folder .git is created to store the future commits. 
+It is necessary to do that in order to tell the computer that the folder is beoming a git reposiroty and it knows how to deal with it.
