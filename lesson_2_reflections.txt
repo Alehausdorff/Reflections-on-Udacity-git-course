@@ -1,4 +1,31 @@
 What happens when you initialize a repository? Why do you need to do it?
 
 A new folder .git is created to store the future commits. 
-It is necessary to do that in order to tell the computer that the folder is beoming a git reposiroty and it knows how to deal with it.
+It is necessary to do that in order to tell the computer that the folder is becoming a git reposiroty and it knows how to deal with it.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is only a way to refer which files am I going to commit next, but I can keep on editing them on the working directory.
+It is useful in the way that maybe not all the files in the directory are wanted to be commited in the same commit. It can also help not to forget a file once it is finished but the logical change is not yet.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Using git diff --staged to see what are the differencies between the last commit and the documents in the staging area.
+
+NOTE: When there is changes in the working directory it appears as *. When the changes are in the staging area it appears with +.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When there is a parallel developement of the project, or a new feature is being developed in different ways.
+
+How do the diagrams help you visualize the branch structure?
+
+It is a more visual representation of the different paths that are followed during the developement process.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+It joins the developements done in both branches. We represent it that way because it shows the paths followed by the two of them.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+On clear situations automatic merging saves lots of time. Git allows the user to do it manually when a conflict occurs. This helps avoiding situations in which code may not work well.
