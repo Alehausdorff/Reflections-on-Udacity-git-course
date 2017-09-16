@@ -4,3 +4,9 @@ Normally when working with other people, or even alone when more than one comput
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 It is similar to having the choice of when to commit. Some changes on the local may have to wait until uploading them, for example, the developement of a new feature. It may be interesting to upload it only when it is finished and fully working.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Branches: Structure the developements on the work. Things are pushed and pulled to and from the remote via branches.
+Clones: Copies of repositories from places (GitHub, another computer, the same computer) to the local.
+Forks: Copies of repositories from GitHub to GitHub.
