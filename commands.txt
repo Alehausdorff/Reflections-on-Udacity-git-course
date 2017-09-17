@@ -1,0 +1,92 @@
+git log
+Shows the commits previous to the current one. (q to quit)
+
+git log --stat
+Also shows some statistics on the different commits such as the lines added or deleted.
+
+git diff firstID secondID
+Shows the differences between the two commits.
+
+git clone URL
+Copies the repository of the URL.
+
+git checkout ID
+Allows to change the current commit to another one, the one of the ID. Useful to find where a bug was introduced.
+
+git init
+Creates a git repository. It can be used on an empty directyory or a used one.
+
+git status
+Shows which files have changed since the last commit
+
+git add FILE_1 ... FILE_N
+Adds the files to the staging area. When commiting, all the files in the staging area are commited.
+
+git rm --cache FILE_X
+Removes FILE_X from the staging area.
+
+git commit
+Opens the configured text editor to write a commit message and does the commit.
+
+git commit -m "MESSAGE"
+Does the commit with the message MESSAGE.
+
+############# Style guide: https://udacity.github.io/git-styleguide/
+
+git diff (No arguments)
+Compares the Working directory and the Stagging area
+
+git diff --staged
+Compares the stagging area with the last commit
+
+git reset --hard
+ACHTUNG! Discards any changes on the working directory or the staging area.
+
+git checkout master
+Returns to the HEAD status, the last commit, in case you had detached with git checkout ID.
+
+git branch
+Shows the current branches, and with a * the one which is checked out.
+
+git branch NAME
+Creates a new branch labeled "NAME".
+
+git checkout BRANCH_LABEL
+Checks out the branch namec BRANCH_LABEL.
+
+git checkout -b BRANCH_LABEL
+Does both creating a new branch named BRANCH_LABEL and checking out there.
+
+git log --graph --oneline BRANCH_1 BRANCH_2...
+Shows the sctructure of the master and the branches BRANCH_1, BRANCH_2 etc.
+
+git merge BRANCH_X1 BRANCH_X2...
+Merges the checked out branch and the arguments added to git merge.
+
+git branch -d BRANCH_X
+Deletes the label BRANCH_X but not the commits. Be careful to have merged BRANCH_X before deleting the label, otherwise commits will not be reachable.
+
+git log -n  X
+Shows X number of commits.
+
+git show commit_ID
+Shows the differences between commit_ID and its parent. It is easier than looking for the parent and using git diff.
+
+git remote
+Shows the state of the remotes in the directory.
+
+git remote -v
+The same as git remote but adds information of the url's where the files are going to be up and downloaded.
+
+git remote add NAME URL_ON_GITHUB
+Adds a remote with a name which will be the connection to GitHub. A common name is Origin.
+
+git push REMOTE_NAME BRANCH_TO_UPLOAD
+Uploads the desired branch(es) to the remote.
+
+git pull REMOTE_NAME BRANCH_TO_DOWNLOAD
+Downloads the specified branches to the checked out branch in the local directory.
+
+git fetch origin
+Copies the remote updates as an independent branch to the last commit synced to the remote, it may not be the lastest of the commits.
+(In the local directory the branches have its label, but when referring to the branches on the remote, they are called REMOTE_NAME/BRANCH_ON_REMOTE)
